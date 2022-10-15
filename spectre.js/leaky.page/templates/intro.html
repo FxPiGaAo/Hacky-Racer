@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block script %}
+
+<script>
+
+// gets called by onload
+function init() {
+  const nextButton = document.getElementById('nextButton');
+  nextButton.onclick = () => {
+    location = '/timer.html';
+  };
+  nextButton.disabled = false;
+}
+
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div class=center>
+<h1> Spectre </h1>
+
+<p>
+  This is the SpectreBack demo as part of the artifact evaluation of the Hacky Racers: Exploiting Instruction-Level Parallelism to Generate Stealthy
+  Fine-Grained Timers (ASPLOS 2023). The majority of the code is borrowed from google's Spectre <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array" target="_blank">PoC</a>.
+  It was developed and optimized for Chrome&nbsp;88 running on an Intel® Core™ i7-8750H processor on Linux.
+  While it was confirmed to work on other CPUs (different vendor and/or generation), operating systems and Chromium flavors, you might have to adjust the configuration and it might work less reliably (or not at all).
+  Note that the goal of this proof of concept is to demonstrate the feasibility of a web-based Spectre exploit. It is not a test to see if your device is vulnerable or not.
+  All code is public, you can find it on <a href="https://https://github.com/FxPiGaAo/Hacky-Racer" target="_blank">GitHub</a>.
+</p>
+<p>
+  This demo is split into three parts:
+  <ol>
+    <li>Calibrating the timer to observe side effects of the CPU's speculative execution.</li>
+    <li>A demonstration that infers the memory layout of a JavaScript array.</li>
+    <li>The Spectre proof of concept itself, leaking memory of your browser's renderer process.</li>
+  </ol>
+</p>
+<p>
+  If you want to learn more about the impact on the web and how to protect your website, please check out google's <a href="/blog" target="_blank">blog post</a> and our Hacky Racer paper.
+</p>
+<p>
+  When you're ready, click the <i>next</i> button on the bottom right to start.
+</p>
+
+</div>
+
+{% endblock %}
