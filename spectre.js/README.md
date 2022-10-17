@@ -9,7 +9,7 @@ In this directory, we demonstrate a PoC for SpectreBack Attack (section 7.3) bas
 - install flask: `pip install Flask`
 - run the server on your local: `cd leaky.page; python main.py`
 - copy the output IP and open it on the chrome88 browser (can be download from https://www.slimjet.com/chrome/google-chrome-old-version.php)
-- Follow the instruction to run the task on each page. (Don't forget to untick the "stable timer" box from the timer page.) The result of a successful run is shown in the [succeed_result.png](./succeed_result.png).
+- Follow the instruction to run the task on each page. (Don't forget to untick the "stable timer" box from the timer page.) The result of a successful run is shown in the [succeed_result_spectreback.png](./succeed_result_spectreback.png).
 - to shutdown the local server, press ctrl+c in that terminal.
 
 
