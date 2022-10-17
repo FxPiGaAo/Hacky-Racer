@@ -1,10 +1,11 @@
 # Hacky Racer-based SpectreBack Attack JavaScript PoCs
 
-This directory is built on top of codes from https://github.com/google/security-research-pocs/tree/master/spectre.js repository, which implements the first JavaScript Spectre PoC attack (https://leaky.page).
+This directory is built on top of codes from https://github.com/google/security-research-pocs/tree/master/spectre.js repository, which implements the first JavaScript [Spectre PoC attack](https://leaky.page).
 
-In this directory, we demonstrate a PoC for SpectreBack Attack (section 7.3)based on PLRU Gadget for Reorder Input (section 6.2).
+In this directory, we demonstrate a PoC for SpectreBack Attack (section 7.3) based on PLRU Gadget for Reorder Input (section 6.2).
 
 ## How to run
+- install pip: `sudo apt install python-pip`
 - install flask: `pip install Flask`
 - run the server on your local: `cd leaky.page; python main.py`
 - copy the output IP and open it on the chrome88 browser (can be download from https://www.slimjet.com/chrome/google-chrome-old-version.php)
