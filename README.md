@@ -1,6 +1,6 @@
 # Hacky Racers
 
-This repository is the open source component of our paper: Hacky Racers: Exploiting Instruction-Level Parallelism to Generate Stealthy Fine-Grained Timers (ASPLOS 2023 Distinguished Paper Award).
+This repository is the open source component of our paper: Hacky Racers: Exploiting Instruction-Level Parallelism to Generate Stealthy Fine-Grained Timers (ASPLOS 2023 Distinguished Paper Award, Micro Top Picks 2024 Honorable Mention).
 
 It includes following parts of experiments in the paper:
 - `Arbitrary Replacement Magnifier Gadget`:  This is an magnifier gadget for set-associative cache with an arbitrary replacement policy. For more details, please refer to  section 6.3 of the paper.
